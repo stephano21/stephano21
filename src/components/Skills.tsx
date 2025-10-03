@@ -14,70 +14,73 @@ const { Title } = Typography
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
-      icon: <GlobalOutlined style={{ fontSize: '32px', color: '#1890ff' }} />,
+      title: 'Frontend Development',
+      icon: <GlobalOutlined style={{ fontSize: '36px', color: '#1a365d' }} />,
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Ant Design', level: 80 },
-        { name: 'Tailwind CSS', level: 75 }
+        { name: 'React & Next.js', level: 95 },
+        { name: 'TypeScript', level: 90 },
+        { name: 'JavaScript ES6+', level: 95 },
+        { name: 'HTML5 / CSS3', level: 98 },
+        { name: 'Ant Design', level: 85 },
+        { name: 'Tailwind CSS', level: 80 }
       ]
     },
     {
-      title: 'Backend',
-      icon: <CodeOutlined style={{ fontSize: '32px', color: '#52c41a' }} />,
+      title: 'Backend Development',
+      icon: <CodeOutlined style={{ fontSize: '36px', color: '#2d3748' }} />,
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'Python', level: 75 },
-        { name: 'Django', level: 70 },
-        { name: 'C#', level: 70 },
-        { name: '.NET Core', level: 65 }
+        { name: 'Node.js & Express', level: 90 },
+        { name: 'Python & Django', level: 85 },
+        { name: 'C# & .NET Core', level: 80 },
+        { name: 'RESTful APIs', level: 95 },
+        { name: 'GraphQL', level: 75 },
+        { name: 'Microservices', level: 80 }
       ]
     },
     {
-      title: 'Base de Datos',
-      icon: <DatabaseOutlined style={{ fontSize: '32px', color: '#fa8c16' }} />,
+      title: 'Database & Storage',
+      icon: <DatabaseOutlined style={{ fontSize: '36px', color: '#3182ce' }} />,
       skills: [
+        { name: 'PostgreSQL', level: 85 },
         { name: 'MongoDB', level: 80 },
-        { name: 'PostgreSQL', level: 75 },
-        { name: 'MySQL', level: 70 },
-        { name: 'Redis', level: 65 },
-        { name: 'Firebase', level: 70 }
+        { name: 'Redis', level: 75 },
+        { name: 'MySQL', level: 80 },
+        { name: 'Firebase', level: 70 },
+        { name: 'Data Modeling', level: 85 }
       ]
     },
     {
       title: 'Cloud & DevOps',
-      icon: <CloudOutlined style={{ fontSize: '32px', color: '#eb2f96' }} />,
+      icon: <CloudOutlined style={{ fontSize: '36px', color: '#4a5568' }} />,
       skills: [
-        { name: 'AWS', level: 70 },
-        { name: 'Docker', level: 75 },
-        { name: 'Git', level: 90 },
-        { name: 'CI/CD', level: 65 },
-        { name: 'Linux', level: 70 }
+        { name: 'AWS Services', level: 80 },
+        { name: 'Docker & Kubernetes', level: 85 },
+        { name: 'CI/CD Pipelines', level: 80 },
+        { name: 'Git & GitHub', level: 95 },
+        { name: 'Linux Administration', level: 75 },
+        { name: 'Monitoring & Logging', level: 70 }
       ]
     },
     {
-      title: 'Mobile',
-      icon: <MobileOutlined style={{ fontSize: '32px', color: '#722ed1' }} />,
+      title: 'Mobile Development',
+      icon: <MobileOutlined style={{ fontSize: '36px', color: '#718096' }} />,
       skills: [
-        { name: 'React Native', level: 75 },
-        { name: 'Flutter', level: 60 },
-        { name: 'iOS Development', level: 55 },
-        { name: 'Android Development', level: 60 }
+        { name: 'React Native', level: 80 },
+        { name: 'Flutter', level: 70 },
+        { name: 'iOS Development', level: 65 },
+        { name: 'Android Development', level: 70 },
+        { name: 'Cross-platform', level: 85 }
       ]
     },
     {
-      title: 'Herramientas',
-      icon: <ToolOutlined style={{ fontSize: '32px', color: '#13c2c2' }} />,
+      title: 'Tools & Methodologies',
+      icon: <ToolOutlined style={{ fontSize: '36px', color: '#a0aec0' }} />,
       skills: [
-        { name: 'VS Code', level: 95 },
-        { name: 'Figma', level: 70 },
-        { name: 'Postman', level: 80 },
-        { name: 'Jest', level: 75 },
-        { name: 'Webpack', level: 65 }
+        { name: 'VS Code & IDEs', level: 98 },
+        { name: 'Figma & Design', level: 75 },
+        { name: 'Testing (Jest, Cypress)', level: 80 },
+        { name: 'Agile & Scrum', level: 90 },
+        { name: 'Project Management', level: 85 }
       ]
     }
   ]
@@ -95,35 +98,43 @@ const Skills: React.FC = () => {
               style={{ 
                 height: '100%',
                 borderRadius: '12px',
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+                boxShadow: '0 2px 8px rgba(0, 0, 0, 0.06)',
+                border: '1px solid #e2e8f0',
+                background: '#ffffff'
               }}
             >
-              <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+              <div style={{ textAlign: 'center', marginBottom: '24px' }}>
                 {category.icon}
-                <Title level={4} style={{ margin: '10px 0 0 0' }}>
+                <Title level={4} style={{ margin: '12px 0 0 0', color: '#1a365d', fontWeight: '600' }}>
                   {category.title}
                 </Title>
               </div>
               
-              <div style={{ marginTop: '20px' }}>
+              <div style={{ marginTop: '24px' }}>
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} style={{ marginBottom: '15px' }}>
+                  <div key={skillIndex} style={{ marginBottom: '18px' }}>
                     <div style={{ 
                       display: 'flex', 
                       justifyContent: 'space-between', 
-                      marginBottom: '5px' 
+                      marginBottom: '8px',
+                      alignItems: 'center'
                     }}>
-                      <span style={{ fontWeight: '500' }}>{skill.name}</span>
-                      <span style={{ color: '#1890ff' }}>{skill.level}%</span>
+                      <span style={{ fontWeight: '500', color: '#2d3748', fontSize: '15px' }}>
+                        {skill.name}
+                      </span>
+                      <span style={{ color: '#1a365d', fontWeight: '600', fontSize: '14px' }}>
+                        {skill.level}%
+                      </span>
                     </div>
                     <Progress 
                       percent={skill.level} 
                       size="small"
                       strokeColor={{
-                        '0%': '#1890ff',
-                        '100%': '#52c41a',
+                        '0%': '#1a365d',
+                        '100%': '#3182ce',
                       }}
                       showInfo={false}
+                      style={{ height: '6px' }}
                     />
                   </div>
                 ))}
@@ -134,19 +145,20 @@ const Skills: React.FC = () => {
       </Row>
       
       <div style={{ 
-        marginTop: '50px', 
+        marginTop: '60px', 
         textAlign: 'center',
-        padding: '30px',
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        borderRadius: '12px',
-        color: 'white'
+        padding: '40px',
+        background: 'linear-gradient(135deg, #1a365d 0%, #2d3748 100%)',
+        borderRadius: '16px',
+        color: 'white',
+        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)'
       }}>
-        <Title level={3} style={{ color: 'white', marginBottom: '15px' }}>
-          ¿Interesado en trabajar juntos?
+        <Title level={3} style={{ color: 'white', marginBottom: '20px', fontWeight: '600' }}>
+          ¿Listo para impulsar su próximo proyecto?
         </Title>
-        <p style={{ fontSize: '16px', margin: 0 }}>
-          Siempre estoy abierto a nuevas oportunidades y proyectos emocionantes. 
-          ¡No dudes en contactarme!
+        <p style={{ fontSize: '18px', margin: 0, color: 'rgba(255, 255, 255, 0.9)', lineHeight: '1.6' }}>
+          Colaboremos para crear soluciones tecnológicas que transformen su negocio. 
+          Contacte conmigo para discutir sus objetivos estratégicos.
         </p>
       </div>
     </section>

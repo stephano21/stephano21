@@ -57,12 +57,17 @@ const Header: React.FC = () => {
       boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
     }}>
       <div style={{ 
-        fontSize: '24px', 
-        fontWeight: 'bold', 
-        color: '#1890ff',
-        cursor: 'pointer'
+        fontSize: '32px', 
+        fontWeight: '800', 
+        background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        cursor: 'pointer',
+        letterSpacing: '-0.03em',
+        textShadow: '0 2px 4px rgba(99, 102, 241, 0.2)'
       }} onClick={() => scrollToSection('hero')}>
-        Stephano21
+        🚀 Stephano21
       </div>
       
       {/* Menú desktop */}
@@ -101,7 +106,7 @@ const Header: React.FC = () => {
         />
       </Drawer>
       
-      <style jsx>{`
+      <style>{`
         @media (max-width: 768px) {
           .mobile-menu-btn {
             display: block !important;

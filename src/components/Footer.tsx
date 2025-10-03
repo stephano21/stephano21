@@ -28,26 +28,28 @@ const Footer: React.FC = () => {
 
   return (
     <AntFooter style={{ 
-      background: '#001529',
+      background: '#1a202c',
       color: 'white',
-      padding: '40px 50px 20px',
-      marginTop: '50px'
+      padding: '50px 50px 24px',
+      marginTop: '60px',
+      borderTop: '1px solid #2d3748'
     }}>
       <Row gutter={[32, 32]}>
         <Col xs={24} md={8}>
           <div>
             <Text style={{ 
-              fontSize: '24px', 
-              fontWeight: 'bold', 
-              color: '#1890ff',
+              fontSize: '28px', 
+              fontWeight: '700', 
+              color: '#3182ce',
               display: 'block',
-              marginBottom: '15px'
+              marginBottom: '20px',
+              letterSpacing: '-0.025em'
             }}>
               Stephano21
             </Text>
-            <Text style={{ color: '#8c8c8c', fontSize: '16px' }}>
-              Desarrollador Full Stack apasionado por crear soluciones innovadoras 
-              y eficientes con las últimas tecnologías.
+            <Text style={{ color: '#a0aec0', fontSize: '16px', lineHeight: '1.6' }}>
+              Especialista en desarrollo empresarial, transformando ideas estratégicas 
+              en soluciones tecnológicas de alto impacto para organizaciones líderes.
             </Text>
           </div>
         </Col>
@@ -56,17 +58,17 @@ const Footer: React.FC = () => {
           <div>
             <Text style={{ 
               fontSize: '18px', 
-              fontWeight: 'bold', 
+              fontWeight: '600', 
               color: 'white',
               display: 'block',
-              marginBottom: '15px'
+              marginBottom: '20px'
             }}>
               Enlaces Rápidos
             </Text>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <Link 
                 href="#about" 
-                style={{ color: '#8c8c8c' }}
+                style={{ color: '#a0aec0', fontSize: '15px' }}
                 onClick={(e) => {
                   e.preventDefault()
                   const element = document.getElementById('about')
@@ -79,7 +81,7 @@ const Footer: React.FC = () => {
               </Link>
               <Link 
                 href="#skills" 
-                style={{ color: '#8c8c8c' }}
+                style={{ color: '#a0aec0', fontSize: '15px' }}
                 onClick={(e) => {
                   e.preventDefault()
                   const element = document.getElementById('skills')
@@ -92,7 +94,7 @@ const Footer: React.FC = () => {
               </Link>
               <Link 
                 href="#projects" 
-                style={{ color: '#8c8c8c' }}
+                style={{ color: '#a0aec0', fontSize: '15px' }}
                 onClick={(e) => {
                   e.preventDefault()
                   const element = document.getElementById('projects')
@@ -105,7 +107,7 @@ const Footer: React.FC = () => {
               </Link>
               <Link 
                 href="#contact" 
-                style={{ color: '#8c8c8c' }}
+                style={{ color: '#a0aec0', fontSize: '15px' }}
                 onClick={(e) => {
                   e.preventDefault()
                   const element = document.getElementById('contact')
@@ -124,10 +126,10 @@ const Footer: React.FC = () => {
           <div>
             <Text style={{ 
               fontSize: '18px', 
-              fontWeight: 'bold', 
+              fontWeight: '600', 
               color: 'white',
               display: 'block',
-              marginBottom: '15px'
+              marginBottom: '20px'
             }}>
               Redes Sociales
             </Text>
@@ -138,15 +140,15 @@ const Footer: React.FC = () => {
                   href={social.href}
                   target="_blank"
                   style={{ 
-                    color: '#8c8c8c',
-                    fontSize: '20px',
+                    color: '#a0aec0',
+                    fontSize: '22px',
                     transition: 'color 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#1890ff'
+                    e.currentTarget.style.color = '#3182ce'
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.color = '#8c8c8c'
+                    e.currentTarget.style.color = '#a0aec0'
                   }}
                 >
                   {social.icon}
@@ -158,14 +160,14 @@ const Footer: React.FC = () => {
       </Row>
       
       <div style={{ 
-        borderTop: '1px solid #303030',
-        marginTop: '30px',
-        paddingTop: '20px',
+        borderTop: '1px solid #2d3748',
+        marginTop: '40px',
+        paddingTop: '24px',
         textAlign: 'center'
       }}>
-        <Text style={{ color: '#8c8c8c' }}>
-          © {currentYear} Stephano21. Hecho con{' '}
-          <HeartOutlined style={{ color: '#ff4d4f' }} />{' '}
+        <Text style={{ color: '#a0aec0', fontSize: '15px' }}>
+          © {currentYear} Stephano21. Desarrollado con{' '}
+          <HeartOutlined style={{ color: '#3182ce' }} />{' '}
           usando React, TypeScript y Ant Design.
         </Text>
       </div>

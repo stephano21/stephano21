@@ -51,12 +51,13 @@ const Contact: React.FC = () => {
       <Row gutter={[32, 32]} align="top">
         <Col xs={24} lg={12}>
           <Card style={{ height: '100%' }}>
-            <Title level={3} style={{ marginBottom: '20px' }}>
-              ¡Hablemos!
+            <Title level={3} style={{ marginBottom: '24px', color: '#1a365d', fontWeight: '600' }}>
+              Iniciemos una Conversación
             </Title>
-            <Paragraph style={{ fontSize: '16px', marginBottom: '30px' }}>
-              ¿Tienes un proyecto en mente? ¿Necesitas un desarrollador para tu equipo? 
-              Me encantaría escuchar sobre tu idea y cómo puedo ayudarte a hacerla realidad.
+            <Paragraph style={{ fontSize: '18px', marginBottom: '32px', color: '#4a5568', lineHeight: '1.7' }}>
+              ¿Tiene un proyecto estratégico en desarrollo? ¿Busca un socio tecnológico 
+              para su organización? Estoy aquí para transformar sus objetivos de negocio 
+              en soluciones digitales de alto impacto.
             </Paragraph>
             
             <Form
@@ -121,7 +122,7 @@ const Contact: React.FC = () => {
         
         <Col xs={24} lg={12}>
           <Card style={{ height: '100%' }}>
-            <Title level={3} style={{ marginBottom: '30px' }}>
+            <Title level={3} style={{ marginBottom: '32px', color: '#1a365d', fontWeight: '600' }}>
               Información de Contacto
             </Title>
             
@@ -163,18 +164,19 @@ const Contact: React.FC = () => {
             
             <div style={{ 
               marginTop: '40px',
-              padding: '20px',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              borderRadius: '8px',
+              padding: '24px',
+              background: 'linear-gradient(135deg, #1a365d 0%, #2d3748 100%)',
+              borderRadius: '12px',
               color: 'white',
-              textAlign: 'center'
+              textAlign: 'center',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
             }}>
-              <Title level={4} style={{ color: 'white', marginBottom: '10px' }}>
-                Tiempo de Respuesta
+              <Title level={4} style={{ color: 'white', marginBottom: '12px', fontWeight: '600' }}>
+                Compromiso de Servicio
               </Title>
-              <Paragraph style={{ color: 'white', margin: 0 }}>
-                Normalmente respondo en menos de 24 horas. 
-                ¡No dudes en contactarme!
+              <Paragraph style={{ color: 'rgba(255, 255, 255, 0.9)', margin: 0, fontSize: '16px' }}>
+                Respuesta garantizada en menos de 24 horas. 
+                Su proyecto es mi prioridad.
               </Paragraph>
             </div>
           </Card>
@@ -190,7 +192,7 @@ const Contact: React.FC = () => {
         borderRadius: '12px',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
       }}>
-        <Title level={3} style={{ marginBottom: '20px' }}>
+        <Title level={3} style={{ marginBottom: '24px', color: '#1a365d', fontWeight: '600' }}>
           Conectemos en Redes Sociales
         </Title>
         <Space size="large" wrap>
@@ -200,10 +202,11 @@ const Contact: React.FC = () => {
             href="https://github.com/stephano21"
             target="_blank"
             style={{ 
-              background: '#333',
-              borderColor: '#333',
-              height: '50px',
-              padding: '0 30px'
+              background: '#1a365d',
+              borderColor: '#1a365d',
+              height: '56px',
+              padding: '0 32px',
+              fontWeight: '500'
             }}
           >
             GitHub
@@ -216,8 +219,9 @@ const Contact: React.FC = () => {
               background: '#0077b5',
               borderColor: '#0077b5',
               color: 'white',
-              height: '50px',
-              padding: '0 30px'
+              height: '56px',
+              padding: '0 32px',
+              fontWeight: '500'
             }}
           >
             LinkedIn
@@ -230,8 +234,9 @@ const Contact: React.FC = () => {
               background: '#1da1f2',
               borderColor: '#1da1f2',
               color: 'white',
-              height: '50px',
-              padding: '0 30px'
+              height: '56px',
+              padding: '0 32px',
+              fontWeight: '500'
             }}
           >
             Twitter
