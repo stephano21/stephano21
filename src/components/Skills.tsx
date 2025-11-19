@@ -14,73 +14,74 @@ const { Title } = Typography
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      icon: <GlobalOutlined style={{ fontSize: '36px', color: '#1a365d' }} />,
+      title: 'Desarrollo Backend',
+      icon: <CodeOutlined style={{ fontSize: '36px', color: '#1a365d' }} />,
       skills: [
-        { name: 'React & Next.js', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'JavaScript ES6+', level: 95 },
-        { name: 'HTML5 / CSS3', level: 98 },
-        { name: 'Ant Design', level: 85 },
-        { name: 'Tailwind CSS', level: 80 }
+        { name: 'C#', level: 85 },
+        { name: 'ASP.NET Core 6+', level: 85 },
+        { name: 'EF Core', level: 80 },
+        { name: 'LINQ', level: 80 },
+        { name: 'RESTful APIs', level: 90 },
+        { name: 'Node.js', level: 60 }
       ]
     },
     {
-      title: 'Backend Development',
-      icon: <CodeOutlined style={{ fontSize: '36px', color: '#2d3748' }} />,
+      title: 'Desarrollo Frontend',
+      icon: <GlobalOutlined style={{ fontSize: '36px', color: '#2d3748' }} />,
       skills: [
-        { name: 'Node.js & Express', level: 90 },
-        { name: 'Python & Django', level: 85 },
-        { name: 'C# & .NET Core', level: 80 },
-        { name: 'RESTful APIs', level: 95 },
-        { name: 'GraphQL', level: 75 },
-        { name: 'Microservices', level: 80 }
+        { name: 'Vue.js', level: 80 },
+        { name: 'JavaScript', level: 80 },
+        { name: 'jQuery', level: 60 },
+        { name: 'React', level: 60 },
+        { name: 'React Native', level: 80 },
+        { name: 'CSS', level: 80 }
       ]
     },
     {
-      title: 'Database & Storage',
+      title: 'Bases de Datos',
       icon: <DatabaseOutlined style={{ fontSize: '36px', color: '#3182ce' }} />,
       skills: [
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'Redis', level: 75 },
+        { name: 'MS SQL Server', level: 80 },
         { name: 'MySQL', level: 80 },
-        { name: 'Firebase', level: 70 },
-        { name: 'Data Modeling', level: 85 }
+        { name: 'PostgreSQL', level: 80 },
+        { name: 'Data Modeling', level: 75 },
+        { name: 'Stored Procedures', level: 70 },
+        { name: 'Query Optimization', level: 75 }
       ]
     },
     {
-      title: 'Cloud & DevOps',
-      icon: <CloudOutlined style={{ fontSize: '36px', color: '#4a5568' }} />,
+      title: 'Herramientas & Control',
+      icon: <ToolOutlined style={{ fontSize: '36px', color: '#4a5568' }} />,
       skills: [
-        { name: 'AWS Services', level: 80 },
-        { name: 'Docker & Kubernetes', level: 85 },
-        { name: 'CI/CD Pipelines', level: 80 },
-        { name: 'Git & GitHub', level: 95 },
-        { name: 'Linux Administration', level: 75 },
-        { name: 'Monitoring & Logging', level: 70 }
+        { name: 'Git', level: 80 },
+        { name: 'Visual Studio', level: 90 },
+        { name: 'Blazor', level: 70 },
+        { name: 'Semantic UI', level: 70 },
+        { name: 'HTML5', level: 85 },
+        { name: 'TypeScript', level: 60 }
       ]
     },
     {
-      title: 'Mobile Development',
+      title: 'Desarrollo Móvil',
       icon: <MobileOutlined style={{ fontSize: '36px', color: '#718096' }} />,
       skills: [
         { name: 'React Native', level: 80 },
-        { name: 'Flutter', level: 70 },
-        { name: 'iOS Development', level: 65 },
-        { name: 'Android Development', level: 70 },
-        { name: 'Cross-platform', level: 85 }
+        { name: 'Cross-platform', level: 80 },
+        { name: 'Mobile UI/UX', level: 70 },
+        { name: 'App Deployment', level: 65 },
+        { name: 'Performance Optimization', level: 70 }
       ]
     },
     {
-      title: 'Tools & Methodologies',
-      icon: <ToolOutlined style={{ fontSize: '36px', color: '#a0aec0' }} />,
+      title: 'Otros Conocimientos',
+      icon: <CloudOutlined style={{ fontSize: '36px', color: '#a0aec0' }} />,
       skills: [
-        { name: 'VS Code & IDEs', level: 98 },
-        { name: 'Figma & Design', level: 75 },
-        { name: 'Testing (Jest, Cypress)', level: 80 },
-        { name: 'Agile & Scrum', level: 90 },
-        { name: 'Project Management', level: 85 }
+        { name: 'PHP', level: 80 },
+        { name: 'Python', level: 80 },
+        { name: 'Sistemas WMS', level: 85 },
+        { name: 'Sistemas TMS', level: 85 },
+        { name: 'Integración APIs', level: 90 },
+        { name: 'Soporte Técnico', level: 85 }
       ]
     }
   ]

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     },
     {
       icon: <LinkedinOutlined />,
-      href: 'https://linkedin.com/in/stephano21',
+      href: 'https://www.linkedin.com/in/stephano-chang-754050214/',
       label: 'LinkedIn'
     },
     {
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
               marginBottom: '20px',
               letterSpacing: '-0.025em'
             }}>
-              Stephano21
+              Stephano Chang
             </Text>
             <Text style={{ color: '#a0aec0', fontSize: '16px', lineHeight: '1.6' }}>
               Especialista en desarrollo empresarial, transformando ideas estratégicas 

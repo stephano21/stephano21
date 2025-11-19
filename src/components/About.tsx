@@ -8,48 +8,54 @@ const About: React.FC = () => {
   const experiences = [
     {
       year: '2023 - Presente',
-      title: '🚀 Senior Full Stack Developer',
-      company: 'Tech Startup & Freelance',
-      description: 'Liderando la revolución digital con tecnologías de vanguardia. Especializado en React, Node.js y arquitecturas cloud modernas.'
+      title: '🚀 Desarrollador Backend',
+      company: 'Apptelink S.A',
+      description: 'Desarrollo e implementación de sistemas WMS (Gestión de Inventarios) y TMS (Gestión del Transporte). Integración con Equifax para scoring crediticio y optimización de pantallas dinámicas con Vue.js.'
     },
     {
-      year: '2022 - 2023',
-      title: '⚡ Lead Frontend Developer',
-      company: 'InnovateTech Solutions',
-      description: 'Transformando ideas en experiencias digitales increíbles. Experto en performance, UX/UI y metodologías ágiles.'
+      year: '2023',
+      title: '⚡ Pasante',
+      company: 'Apptelink S.A',
+      description: 'Desarrollo Web MVC, APIs REST con ASP.NET Core, LINQ, EF Core y SQL Server. Mantenimiento de sistemas en producción y desarrollo UI con Semantic, jQuery, Blazor y Vue.js.'
     },
     {
-      year: '2021 - 2022',
-      title: '💻 Full Stack Developer',
-      company: 'CodeCraft Studio',
-      description: 'Desarrollando soluciones end-to-end escalables. Pasión por el código limpio y las mejores prácticas de desarrollo.'
+      year: '2022',
+      title: '💻 Pasante',
+      company: 'Coorporación De La Tripulacion De La Armada',
+      description: 'Análisis del código fuente y manejo de formularios con jQuery. Experiencia en desarrollo web y mantenimiento de sistemas.'
+    },
+    {
+      year: '2022',
+      title: '🔧 Pasante',
+      company: 'Ministerio de Agricultura, Ganadería, Acuacultura y Pesca (MAGAP)',
+      description: 'Mantenimiento de computadoras, formateo y actualización de Windows. Trabajo con sistemas ZKTECO.'
     }
   ]
 
   const achievements = [
     {
       icon: <TrophyOutlined style={{ fontSize: '32px', color: '#6366f1' }} />,
-      title: 'Proyectos Tech',
-      number: '50+',
-      description: 'Apps y sistemas innovadores'
+      title: 'Sistemas Desarrollados',
+      number: 'WMS/TMS',
+      description: 'Gestión de inventarios y transporte'
     },
     {
       icon: <UserOutlined style={{ fontSize: '32px', color: '#8b5cf6' }} />,
-      title: 'Clientes Satisfechos',
-      number: '30+',
-      description: 'Startups y empresas tech'
+      title: 'Experiencia',
+      number: '2+',
+      description: 'Años en Apptelink S.A'
     },
     {
       icon: <BookOutlined style={{ fontSize: '32px', color: '#06b6d4' }} />,
       title: 'Tecnologías',
-      number: '25+',
-      description: 'Stack moderno completo'
+      number: '15+',
+      description: 'C#, Vue.js, ASP.NET Core'
     },
     {
       icon: <CalendarOutlined style={{ fontSize: '32px', color: '#10b981' }} />,
-      title: 'Años Codeando',
-      number: '4+',
-      description: 'Experiencia en desarrollo'
+      title: 'Formación',
+      number: '2019-2024',
+      description: 'Universidad Agraria del Ecuador'
     }
   ]
 
@@ -69,22 +75,21 @@ const About: React.FC = () => {
                   marginBottom: '20px'
                 }}
               />
-              <Title level={3}>Stephano21</Title>
+              <Title level={3}>Stephano Chang</Title>
               <Paragraph style={{ fontSize: '20px', color: '#6366f1', fontWeight: '600' }}>
                 🚀 Tech Developer & Innovator
               </Paragraph>
             </div>
             
             <Paragraph style={{ fontSize: '20px', lineHeight: '1.8', color: '#6b7280', fontWeight: '400' }}>
-              🎯 <strong>Desarrollador apasionado</strong> por crear experiencias digitales que marquen la diferencia. 
-              Especializado en tecnologías modernas como React, Node.js y Cloud Computing, 
-              siempre buscando la próxima innovación tecnológica.
+              🎯 <strong>Desarrollador Full Stack</strong> enfocado en resolver problemas y en la integración de sistemas de terceros. 
+              Me especializo en crear soluciones eficientes y escalables, brindando soporte técnico de calidad.
             </Paragraph>
             
             <Paragraph style={{ fontSize: '20px', lineHeight: '1.8', color: '#6b7280', fontWeight: '400' }}>
-              💡 Mi misión es <span style={{ color: '#6366f1', fontWeight: '600' }}>transformar ideas en realidad</span> 
-              a través de código elegante, arquitecturas escalables y soluciones que realmente 
-              impacten a los usuarios finales.
+              💡 Comprometido con mi <span style={{ color: '#6366f1', fontWeight: '600' }}>desarrollo profesional</span>, 
+              soy autodidacta y busco mejorar constantemente mis habilidades en tecnologías como 
+              C#, ASP.NET Core, Vue.js y sistemas de gestión empresarial.
             </Paragraph>
           </Card>
         </Col>

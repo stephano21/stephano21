@@ -27,19 +27,19 @@ const Contact: React.FC = () => {
     {
       icon: <MailOutlined style={{ fontSize: '24px', color: '#1890ff' }} />,
       title: 'Email',
-      value: 'stephano21@email.com',
-      link: 'mailto:stephano21@email.com'
+      value: 'stephanochang21@gmail.com',
+      link: 'mailto:stephanochang21@gmail.com'
     },
     {
       icon: <PhoneOutlined style={{ fontSize: '24px', color: '#52c41a' }} />,
       title: 'Teléfono',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: 'Cel: 0963359123',
+      link: 'tel:+593963359123'
     },
     {
       icon: <EnvironmentOutlined style={{ fontSize: '24px', color: '#fa8c16' }} />,
       title: 'Ubicación',
-      value: 'Ciudad, País',
+      value: 'Guayaquil, Ecuador',
       link: null
     }
   ]
@@ -213,7 +213,7 @@ const Contact: React.FC = () => {
           </Button>
           <Button 
             size="large"
-            href="https://linkedin.com/in/stephano21"
+            href="https://www.linkedin.com/in/stephano-chang-754050214"
             target="_blank"
             style={{ 
               background: '#0077b5',
@@ -228,7 +228,7 @@ const Contact: React.FC = () => {
           </Button>
           <Button 
             size="large"
-            href="https://twitter.com/stephano21"
+            href="https://x.com/leonel_chang21"
             target="_blank"
             style={{ 
               background: '#1da1f2',
@@ -240,6 +240,18 @@ const Contact: React.FC = () => {
             }}
           >
             Twitter
+          </Button>
+          <Button size="large" 
+          href="https://www.instagram.com/stephano_chang" target="_blank" style={{ 
+              background: '#1da1f2',
+              borderColor: '#1da1f2',
+              color: 'white',
+              height: '56px',
+              padding: '0 32px',
+              fontWeight: '500'
+            }}
+          >
+            Instagram
           </Button>
         </Space>
       </div>

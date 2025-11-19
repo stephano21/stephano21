@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Layout, Menu, Button, Drawer } from 'antd'
-import { MenuOutlined, HomeOutlined, UserOutlined, CodeOutlined, ProjectOutlined, MailOutlined } from '@ant-design/icons'
+import { MenuOutlined, HomeOutlined, UserOutlined, CodeOutlined, ProjectOutlined, BookOutlined, MailOutlined } from '@ant-design/icons'
 
 const { Header: AntHeader } = Layout
 
@@ -31,6 +31,12 @@ const Header: React.FC = () => {
       icon: <ProjectOutlined />,
       label: 'Proyectos',
       onClick: () => scrollToSection('projects')
+    },
+    {
+      key: 'courses',
+      icon: <BookOutlined />,
+      label: 'Cursos',
+      onClick: () => scrollToSection('courses')
     },
     {
       key: 'contact',
@@ -67,7 +73,7 @@ const Header: React.FC = () => {
         letterSpacing: '-0.03em',
         textShadow: '0 2px 4px rgba(99, 102, 241, 0.2)'
       }} onClick={() => scrollToSection('hero')}>
-        🚀 Stephano21
+        🚀 Stephano Chang
       </div>
       
       {/* Menú desktop */}

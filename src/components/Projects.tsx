@@ -8,58 +8,58 @@ const { Meta } = Card
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'Plataforma de comercio electrónico completa con React, Node.js y MongoDB. Incluye autenticación, pagos, gestión de inventario y panel de administración.',
-      image: '🛒',
-      technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe'],
-      githubUrl: 'https://github.com/stephano21/ecommerce-platform',
-      liveUrl: 'https://ecommerce-demo.com',
+      title: 'Sistema WMS (Gestión de Inventarios)',
+      description: 'Desarrollo e implementación de sistema WMS para optimizar procesos logísticos y mejorar la trazabilidad de productos. Integración con sistemas de terceros y APIs externas.',
+      image: '📦',
+      technologies: ['C#', 'ASP.NET Core', 'Vue.js', 'SQL Server', 'EF Core'],
+      githubUrl: '#',
+      liveUrl: '#',
       featured: true
     },
     {
-      title: 'Task Management App',
-      description: 'Aplicación de gestión de tareas con funcionalidades avanzadas como drag & drop, filtros, colaboración en tiempo real y notificaciones.',
-      image: '📋',
-      technologies: ['React', 'Redux', 'Socket.io', 'Express', 'PostgreSQL'],
-      githubUrl: 'https://github.com/stephano21/task-manager',
-      liveUrl: 'https://taskmanager-demo.com',
+      title: 'Sistema TMS (Gestión del Transporte)',
+      description: 'Desarrollo de soluciones TMS para optimizar la cadena de suministro y eficiencia operativa. Optimización de pantallas dinámicas con Vue.js para mejor experiencia del usuario.',
+      image: '🚛',
+      technologies: ['C#', 'Vue.js', 'LINQ', 'SQL Server', 'REST APIs'],
+      githubUrl: '#',
+      liveUrl: '#',
       featured: true
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Dashboard meteorológico con visualizaciones interactivas, pronósticos extendidos y alertas personalizadas usando APIs meteorológicas.',
-      image: '🌤️',
-      technologies: ['React', 'D3.js', 'Chart.js', 'OpenWeather API'],
-      githubUrl: 'https://github.com/stephano21/weather-dashboard',
-      liveUrl: 'https://weather-demo.com',
+      title: 'Sistema de Control de Tareas',
+      description: 'Diseño e implementación de sistema de control de tareas para técnicos, integrando cálculo de capacity para mejorar la asignación de recursos y productividad.',
+      image: '⚙️',
+      technologies: ['C#', 'ASP.NET Core', 'Blazor', 'EF Core', 'MySQL'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: true
+    },
+    {
+      title: 'Integración Equifax - Scoring Crediticio',
+      description: 'Integración de sistemas con Equifax para el cálculo de scoring crediticio, facilitando la aprobación de líneas de crédito a clientes de manera automatizada.',
+      image: '💳',
+      technologies: ['C#', 'REST APIs', 'JSON', 'SQL Server', 'Web Services'],
+      githubUrl: '#',
+      liveUrl: '#',
       featured: false
     },
     {
-      title: 'Social Media Analytics',
-      description: 'Herramienta de análisis de redes sociales con métricas en tiempo real, reportes personalizados y dashboard interactivo.',
-      image: '📊',
-      technologies: ['React', 'Python', 'Django', 'Redis', 'AWS'],
-      githubUrl: 'https://github.com/stephano21/social-analytics',
-      liveUrl: 'https://analytics-demo.com',
-      featured: true
-    },
-    {
-      title: 'Mobile Banking App',
-      description: 'Aplicación móvil de banca con React Native, incluyendo transferencias, pagos, historial de transacciones y autenticación biométrica.',
-      image: '🏦',
-      technologies: ['React Native', 'TypeScript', 'Node.js', 'MongoDB'],
-      githubUrl: 'https://github.com/stephano21/mobile-banking',
-      liveUrl: 'https://banking-demo.com',
+      title: 'Aplicación React Native',
+      description: 'Desarrollo de aplicaciones móviles nativas para iOS y Android usando React Native, con integración de APIs y funcionalidades cross-platform.',
+      image: '📱',
+      technologies: ['React Native', 'JavaScript', 'APIs', 'Mobile UI'],
+      githubUrl: '#',
+      liveUrl: '#',
       featured: false
     },
     {
-      title: 'AI Chatbot Platform',
-      description: 'Plataforma de chatbots con IA integrada, soporte multiidioma, análisis de sentimientos y integración con múltiples canales.',
-      image: '🤖',
-      technologies: ['React', 'Python', 'TensorFlow', 'FastAPI', 'Docker'],
-      githubUrl: 'https://github.com/stephano21/ai-chatbot',
-      liveUrl: 'https://chatbot-demo.com',
-      featured: true
+      title: 'Sistema Web MVC',
+      description: 'Desarrollo de aplicaciones web MVC con arquitectura REST, incluyendo APIs, mantenimiento de sistemas en producción y desarrollo de interfaces de usuario.',
+      image: '🌐',
+      technologies: ['C#', 'ASP.NET Core', 'MVC', 'jQuery', 'Semantic UI'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: false
     }
   ]
 

@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text'
               }}>
-                Full Stack Developer
+                Ingeniero en Ciencias de la Computación
               </span>
             </Title>
             
@@ -112,11 +112,11 @@ const Hero: React.FC = () => {
               fontWeight: '400',
               textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
             }}>
-              🎯 <strong>Innovación + Tecnología = Resultados</strong><br/>
-              Creo experiencias digitales que transforman negocios. 
-              Especializado en <span style={{ color: '#06b6d4', fontWeight: '600' }}>React</span>, 
-              <span style={{ color: '#8b5cf6', fontWeight: '600' }}> Node.js</span> y 
-              <span style={{ color: '#10b981', fontWeight: '600' }}> Cloud Computing</span>.
+              🎯 <strong>Desarrollador Full Stack</strong><br/>
+              Especializado en resolver problemas y en la integración de sistemas de terceros. 
+              Creo soluciones eficientes y escalables con <span style={{ color: '#06b6d4', fontWeight: '600' }}>C#</span>, 
+              <span style={{ color: '#8b5cf6', fontWeight: '600' }}> ASP.NET Core</span> y 
+              <span style={{ color: '#10b981', fontWeight: '600' }}> Vue.js</span>.
             </Paragraph>
             
             <Space size="large" wrap className="fade-in-up">
