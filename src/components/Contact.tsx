@@ -13,6 +13,7 @@ const Contact: React.FC = () => {
     setLoading(true)
     try {
       // Simular envío de formulario
+      values
       await new Promise(resolve => setTimeout(resolve, 2000))
       message.success('¡Mensaje enviado correctamente! Te responderé pronto.')
       form.resetFields()

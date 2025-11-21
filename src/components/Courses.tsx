@@ -96,7 +96,7 @@ const Courses: React.FC = () => {
                 children: (
                   <div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
-                      <Title level={5} style={{ margin: '0 0 8px 0', color: '#1a365d', fontWeight: '600' }}>
+                      <Title key={index} level={5} style={{ margin: '0 0 8px 0', color: '#1a365d', fontWeight: '600' }}>
                         {course.title}
                       </Title>
                       <Tag color={getTypeColor(course.type)} style={{ marginLeft: '8px' }}>
