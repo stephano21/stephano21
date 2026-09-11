@@ -1,0 +1,18 @@
+# Frontend estático (stynger.online) servido por Nginx dentro del contenedor.
+# El Nginx del host hace reverse proxy hacia 127.0.0.1:3000.
+# La imagen se construye en GitHub Actions y se sube a GHCR; este servidor
+# solo la descarga (docker compose pull && up -d).
+
+services:
+  web:
+    image: ghcr.io/stephano21/stephano21:latest
+    container_name: stephano21-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
